@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Docs | LegacyCSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="legacy.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/files/images/logos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/files/images/logos/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/files/images/logos/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/files/images/logos/manifest.json">
+  <link rel="mask-icon" href="/files/images/logos/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/files/images/logos/favicon.ico">
+  <meta name="msapplication-config" content="/files/images/logos/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+    <script>
+        function show(elementID) {
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                return;
+            }
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            ele.style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="utility space-10"></div>
+
+
+        <div class="page" id="home">
+            <h1>LegacyCSS Docs</h1>
+            <h4>Welcome to Legacy. Where do you want to start?</h4>
+            <div class="items">
+                <ul>
+                    <li><a onclick="show('tables');">Tables</a></li>
+                    <li><a onclick="show('typography');">Typography</a></li>
+                    <li><a onclick="show('links');">Links</a></li>
+                    <li><a onclick="show('buttons');">Buttons</a></li>
+                    <li><a onclick="show('inputs');">Inputs</a></li>
+                    <li><a onclick="show('labels');">Labels</a></li>
+                    <li><a onclick="show('utilites');">Utilites</a></li>
+                    <li><a onclick="show('mediaqueries');">Media Queries</a></li>
+                    <li><a onclick="show('message');">Message Boxes</a></li>
+                    <li><a onclick="show('heropaper');">Hero and Paper</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page" id="tables" style="display:none">
+            <h1>Tables in Legacy</h1><a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Tables are used to show data to a user in an easy to read format.</p>
+            <div class="utility space-5"></div>
+            <div class="table-outter">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Movie Title</th>
+                            <th>Year</th>
+                            <th>Gross</th>
+                        </tr>
+                        <tr>
+                            <td data-th="Movie Title">Avatar</td>
+                            <td data-th="Year">2008</td>
+                            <td data-th="Gross">$2,787,965,087</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Movie Title">Titanic</td>
+                            <td data-th="Year">1997</td>
+                            <td data-th="Gross">$2,186,772,302</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Movie Title">Star Wars: The Force Awakens</td>
+                            <td data-th="Year">2015</td>
+                            <td data-th="Gross">$2,068,178,225</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="page" id="buttons" style="display:none">
+            <h1>Buttons in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Buttons are used as an alteritive to links, they call the users attention.</p>
+            <div class="utility space-5"></div>
+            <p>Standard Buttons</p>
+            <a class="btn">Button</a>
+            <a class="btn primary">Button</a>
+            <a class="btn success">Button</a>
+            <a class="btn warning">Button</a>
+            <a class="btn alert">Button</a>
+            <a class="utility space-5"></a>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="typography" style="display:none">
+            <h1>Typography in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Typography is all text.</p>
+            <div class="utility space-5"></div>
+            <h1 style="margin-bottom:0;">Heading 1</h1>
+                    <h2 style="margin-bottom:0;">Heading 2</h2>
+                    <h3 style="margin-bottom:0;">Heading 3</h3>
+                    <h4 style="margin-bottom:0;">Heading 4</h4>
+                    <h5 style="margin-bottom:0;">Heading 5</h5>
+                    <h6 style="margin-bottom:0;">Heading 6</h6>
+                    <p style="margin-bottom:0;">Paragrapgh</p>
+                    <p style="margin-bottom:0;" class="text primary">Text primary</p>
+                    <p style="margin-bottom:0;" class="text success">Text success</p>
+                    <p style="margin-bottom:0;" class="text warning">Text warning</p>
+                    <p style="margin-bottom:0;" class="text alert">Text alert</p>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="links" style="display:none">
+            <h1>Links in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Links are clickable, they do many things.</p>
+            <div class="utility space-5"></div>
+            <a onclick="alert('Seriously?')">This is a link, it doesn't go anywhere so don't bother clicking it</a>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="inputs" style="display:none">
+            <h1>Inputs in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Inputs allow users to input information.</p>
+            <div class="utility space-5"></div>
+            <input type="text" placeholder="Please enter your name">
+        </div>
+
+
+
+
+
+
+        <div class="page" id="labels" style="display:none">
+            <h1>Lables in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Lables show information or text with a coloured background.</p>
+            <div class="utility space-5"></div>
+            <div class="label">This is a label</div>
+            <div class="label primary">This is a label</div>
+            <div class="label success">This is a label</div>
+            <div class="label warning">This is a label</div>
+            <div class="label alert">This is a label</div>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="utilites" style="display:none">
+            <h1>Utilites in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Utilites are the key compontent of Legacy, but we can't show you on the Docs, check the source for the CSS.</p>
+            <div class="utility space-5"></div>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="mediaqueries" style="display:none">
+          <h1>Media Queries in Legacy</h1>
+          <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+          <p>We can't show you Media Queries on the Docs, check the source for the CSS.</p>
+
+            <div class="utility space-5"></div>
+        </div>
+
+
+        <div class="page" id="message" style="display:none">
+            <h1>Message Boxes in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Message Boxes show information in a call-to-action type deal.</p>
+            <div class="utility space-5"></div>
+            <div class="message">
+          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is a message box.
+        </div>
+        <div class="message primary">
+          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is a message box.
+        </div>
+        <div class="message success">
+          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is a message box.
+        </div>
+        <div class="message warning">
+          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is a message box.
+        </div>
+        <div class="message alert">
+          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is a message box.
+        </div>
+        </div>
+
+
+
+
+
+
+        <div class="page" id="heropaper" style="display:none">
+            <h1>Hero and Paper in Legacy</h1>
+            <<a onclick="show('home');">&laquo; Back to the Docs Home</a><div class="utility space-2"></div>
+            <p>Sorry, we can't show you hero and paper here as this page hasn't been finished yet..</p>
+            <div class="utility space-5"></div>
+        </div>
+
+
+
+
+        </div>
+</body>
+</html>
