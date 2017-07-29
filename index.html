@@ -1,17 +1,376 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>LegacyCSS - Modern, Lightweight Framework</title>
-        <meta name="description" content="Welcome to LegacyCSS. The modern, lightweight SASS/CSS framework created for the web by joexn.">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <style>
-        html {
-           width:100%;
-           height:100%;
-           background:url(logo.png) center center no-repeat;
-           background-size: 400px;
-        }
-    </head>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>LegacyCSS: Modern CSS Framework</title>
+  <meta name="description" content="LegacyCSS is a modern, lightweight CSS framework.">
+  <meta name="author" content="Joe Hannon">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/legacy.css">
+  <link rel="stylesheet" href="dist/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/icons/favicon-16x16.png">
+  <link rel="manifest" href="dist/icons/manifest.json">
+  <link rel="mask-icon" href="dist/icons/safari-pinned-tab.svg" color="#ff0000">
+  <link rel="shortcut icon" href="dist/icons/favicon.ico">
+  <meta name="msapplication-config" content="dist/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body class="code-snippets-visible">
+
+
+  <!-- Welcome -->
+  <div class="container">
+    <section class="header">
+      <h1>LegacyCSS</h1>
+      <h2>Modern, Responsive and Lightweight</h2>
+      <br />
+      <a class="btn primary" href="https://legacycss.com/download">Download 5.0 Now</a>
+      <br /><br /><br />
+      <a href="https://twitter.com/joexn" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @joexn</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="value-props row">
+        <div class="four columns value-prop">
+          <img class="value-img" src="dist/images/Laptop.png">
+          Built to work with every device.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="dist/images/GitHub.png">
+          Hosted on GitHub, always updated.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="dist/images/Sass.png">
+          Created with SASS for easy, modern development.
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Should I Use Legacy -->
+    <div class="docs-section" id="intro">
+      <h6 class="docs-header">Should I use Legacy?</h6>
+      <p>Legacy was built from Skeleton - a project that stopped being updated. Legacy was built for people who want to create web projects who don't want to use full CSS frameworks like Bootstrap or Foundation. LegacyCSS is ever expanding and will always stick to the core reason for Legacy's creation - minimalism.</p>
+    </div>
+
+
+
+
+
+    <!-- Grid -->
+    <div class="docs-section" id="grid">
+      <h6 class="docs-header">Grid</h6>
+      <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <br />
+      <div class="example-grid docs-example">
+        <div class="row">
+          <div class="one column">1</div>
+          <div class="eleven columns">11</div>
+        </div>
+        <div class="row">
+          <div class="two columns">2</div>
+          <div class="ten columns">10</div>
+        </div>
+        <div class="row">
+          <div class="three columns">3</div>
+          <div class="nine columns">9</div>
+        </div>
+        <div class="row">
+          <div class="four columns">4</div>
+          <div class="eight columns">8</div>
+        </div>
+        <div class="row">
+          <div class="five columns">5</div>
+          <div class="seven columns">7</div>
+        </div>
+        <div class="row">
+          <div class="six columns">6</div>
+          <div class="six columns">6</div>
+        </div>
+        <div class="row">
+          <div class="seven columns">7</div>
+          <div class="five columns">5</div>
+        </div>
+        <div class="row">
+          <div class="eight columns">8</div>
+          <div class="four  columns">4</div>
+        </div>
+        <div class="row">
+          <div class="nine columns">9</div>
+          <div class="three columns">3</div>
+        </div>
+        <div class="row">
+          <div class="ten columns">10</div>
+          <div class="two columns">2</div>
+        </div>
+        <div class="row">
+          <div class="eleven columns">11</div>
+          <div class="one column">1</div>
+        </div>
+      </div>
+
+
+</div>
+
+    <!-- Typography -->
+    <div class="docs-section" id="typography">
+      <h6 class="docs-header">Typography</h6>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property.</p>
+      <div class="docs-example">
+        <div class="row">
+          <div class="six columns">
+            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a> served by Google. Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+          </div>
+          <div class="six columns">
+            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 5.0rem</span></h1>
+            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 4.2rem</span></h2>
+            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 3.6rem</span></h3>
+            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 3.0rem</span></h4>
+            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 2.4rem</span></h5>
+            <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.5rem</span></h6>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+    <!-- Buttons -->
+    <div class="docs-section" id="buttons">
+      <h6 class="docs-header">Buttons</h6>
+      <p>Buttons have a few different colours in Legacy.</p>
+      <br />
+      <div class="docs-example">
+        <div>
+          <a class="btn" href="#">Anchor Button</a>
+          <button>Button Element</button>
+          <input type="button" value="Submit Input">
+          <input type="button" value="Button Input">
+        </div>
+        <div>
+          <a class="btn primary" href="#">Anchor Button</a>
+          <button class="btn primary">Button Element</button>
+          <input class="btn primary" type="submit" value="Submit Input">
+          <input class="btn primary" type="button" value="Button Input">
+        </div>
+        <div>
+          <a class="btn warning" href="#">Anchor Button</a>
+          <button class="btn warning">Button Element</button>
+          <input class="btn warning" type="submit" value="Submit Input">
+          <input class="btn warning" type="button" value="Button Input">
+        </div>
+        <div>
+          <a class="btn alert" href="#">Anchor Button</a>
+          <button class="btn alert">Button Element</button>
+          <input class="btn alert" type="submit" value="Submit Input">
+          <input class="btn alert" type="button" value="Button Input">
+        </div>
+        <div>
+          <a class="btn success" href="#">Anchor Button</a>
+          <button class="btn success">Button Element</button>
+          <input class="btn success" type="submit" value="Submit Input">
+          <input class="btn success" type="button" value="Button Input">
+        </div>
+      </div>
+
+</div>
+
+
+    <!-- Messages -->
+    <div class="docs-section" id="messages">
+      <h6 class="docs-header">Messages</h6>
+      <p>Messages provide the user with useful or urgent information in a simple way.</p>
+      <br />
+      <div class="docs-example">
+        <div>
+          <div class="message">Hey! I am a message.</div>
+          <div class="message primary">Hey! I am a message.</div>
+          <div class="message warning">Hey! I am a message.</div>
+          <div class="message alert">Hey! I am a message.</div>
+          <div class="message success">Hey! I am a message.</div>
+        </div>
+      </div>
+
+</div>
+
+    <!-- Forms -->
+    <div class="docs-section" id="forms">
+      <h6 class="docs-header">Forms</h6>
+      <p>These styles make forms a little more helpful.</p>
+      <div class="utility space-2"></div>
+      <div class="docs-example docs-example-forms">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@legacycss.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi&hellip;" id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Lists -->
+    <div class="docs-section" id="lists">
+      <h6 class="docs-header">Lists</h6>
+      <div class="row docs-example">
+        <div class="six columns">
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items mama san</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Code -->
+    <div class="docs-section" id="code">
+      <h6 class="docs-header">Code</h6>
+      <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
+      <div class="utility space-2"></div>
+      <div class="docs-example">
+<pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+      </div>
+
+    </div>
+
+
+
+    <!-- Tables -->
+    <div class="docs-section" id="tables">
+      <h6 class="docs-header">Tables</h6>
+      <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+      <div class="utility space-2"></div>
+      <div class="docs-example">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Queries -->
+    <div class="docs-section" id="queries">
+      <h6 class="docs-header">Media queries</h6>
+      <p>The sizes for the queries are:</p>
+      <div class="utility space-2"></div>
+      <div class="docs-example row">
+        <div class="six columns">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+            <li><strong>Tablet</strong>: 750px</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <ul>
+            <li><strong>Phablet</strong>: 550px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Utilities and Misc. -->
+    <div class="docs-section" id="utilities">
+      <h6 class="docs-header">LegacyCSS</h6>
+      <p>Created by <a href="https://joexn.com" target="_blank">Joe Hannon</a>. Based on Skeleton.</p>
+
+    </div>
+
+</div>
+
+
+</body>
 </html>
